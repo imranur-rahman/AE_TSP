@@ -8,17 +8,46 @@
 using namespace std;
 
 Kruskal::Kruskal(int n){
+    //cout << "in kruskal constructor" << endl;
     isThisInMST.resize(n);
     for(int i = 0; i < n; ++i)
         isThisInMST[i].resize(n);
+
+    isThisValidEdge.resize(n);
+    for(int i = 0; i < n; ++i)
+        isThisValidEdge[i].resize(n);
+
+    for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < n; ++j) {
+            if(i == j)
+                isThisValidEdge[i][j] = false;
+            else
+                isThisValidEdge[i][j] = true;
+        }
+    }
 }
 
-vector<Edge*> create_edges(vector<vector<int> > &graph){
+void Kruskal::setValidEdge(int n, vector<int>&validNodes) {
+    set<int>nodes(validNodes.begin(), validNodes.end());
+    for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < n; ++j) {
+            if(i == j)
+                isThisValidEdge[i][j] = false;
+            else if(nodes.find(i) != nodes.end()  &&  nodes.find(i) != nodes.end())
+                isThisValidEdge[i][j] = true;
+            else
+                isThisValidEdge[i][j] = false;
+        }
+    }
+}
+
+vector<Edge*> Kruskal::create_edges(vector<vector<int> > &graph){
     vector<Edge*>ret;
     int n = graph.size();
     for(int i = 0; i < n; ++i) {
         for(int j = i + 1; j < n; ++j) {
-            ret.push_back(new Edge(i, j, graph[i][j]));
+            if(isThisValidEdge[i][j])
+                ret.push_back(new Edge(i, j, graph[i][j]));
         }
     }
     return ret;

@@ -3,6 +3,7 @@
 #include "read_input.h"
 #include "exact_exponential.h"
 #include "greedy_approximation.h"
+#include "branch_and_bound.h"
 
 using namespace std;
 
@@ -29,6 +30,7 @@ int main(int argc, char * argv[]) {
     generate_input_file(filename, numOfNodes);
     read_input(filename, graph);
     //exact_exponential(graph.size(), graph);
-    greedy_approximation(graph.size(), graph);
+    //greedy_approximation(graph.size(), graph);
+    branch_and_bound(graph.size(), graph);
     return 0;
 }

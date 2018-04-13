@@ -8,6 +8,7 @@ CMakeFiles/AE_TSP.dir/Kruskal.cpp.obj: ../Union_Find.h
 CMakeFiles/AE_TSP.dir/Union_Find.cpp.obj: ../Union_Find.cpp
 CMakeFiles/AE_TSP.dir/Union_Find.cpp.obj: ../Union_Find.h
 
+CMakeFiles/AE_TSP.dir/branch_and_bound.cpp.obj: ../Kruskal.h
 CMakeFiles/AE_TSP.dir/branch_and_bound.cpp.obj: ../branch_and_bound.cpp
 CMakeFiles/AE_TSP.dir/branch_and_bound.cpp.obj: ../branch_and_bound.h
 
@@ -21,6 +22,8 @@ CMakeFiles/AE_TSP.dir/greedy_approximation.cpp.obj: ../greedy_approximation.h
 CMakeFiles/AE_TSP.dir/input_generator.cpp.obj: ../input_generator.cpp
 CMakeFiles/AE_TSP.dir/input_generator.cpp.obj: ../input_generator.h
 
+CMakeFiles/AE_TSP.dir/main.cpp.obj: ../Kruskal.h
+CMakeFiles/AE_TSP.dir/main.cpp.obj: ../branch_and_bound.h
 CMakeFiles/AE_TSP.dir/main.cpp.obj: ../exact_exponential.h
 CMakeFiles/AE_TSP.dir/main.cpp.obj: ../greedy_approximation.h
 CMakeFiles/AE_TSP.dir/main.cpp.obj: ../input_generator.h

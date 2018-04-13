@@ -10,6 +10,8 @@
 #include <queue>
 #include <set>
 
+#include "Kruskal.h"
+
 using namespace std;
 
 int branch_and_bound(int n, vector<vector<int>> &graph);

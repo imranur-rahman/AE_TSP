@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <vector>
 #include <iostream>
+#include <set>
 
 using namespace std;
 
@@ -26,13 +27,14 @@ public:
 
 class Kruskal {
 private:
-    vector<vector<bool> > isThisInMST;
-public:
-    const vector<vector<bool>> &getThisInMST() const;
-
+    vector<vector<bool>>isThisInMST;
+    vector<vector<bool>>isThisValidEdge;
 public:
     Kruskal(int n);
     int findMST(vector<vector<int> > &graph);
+    const vector<vector<bool>> &getThisInMST() const;
+    void setValidEdge(int n, vector<int>&validNodes);
+    vector<Edge*> create_edges(vector<vector<int> > &graph);
 };
 
 

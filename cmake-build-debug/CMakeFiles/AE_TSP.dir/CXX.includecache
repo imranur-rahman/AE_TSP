@@ -19,6 +19,8 @@ vector
 -
 iostream
 -
+set
+-
 
 C:/Users/sabit/CLionProjects/AE_TSP/Union_Find.cpp
 Union_Find.h
@@ -33,6 +35,16 @@ branch_and_bound.h
 C:/Users/sabit/CLionProjects/AE_TSP/branch_and_bound.h
 
 C:/Users/sabit/CLionProjects/AE_TSP/branch_and_bound.h
+vector
+-
+limits
+-
+queue
+-
+set
+-
+Kruskal.h
+C:/Users/sabit/CLionProjects/AE_TSP/Kruskal.h
 
 C:/Users/sabit/CLionProjects/AE_TSP/exact_exponential.cpp
 exact_exponential.h
@@ -93,6 +105,8 @@ exact_exponential.h
 C:/Users/sabit/CLionProjects/AE_TSP/exact_exponential.h
 greedy_approximation.h
 C:/Users/sabit/CLionProjects/AE_TSP/greedy_approximation.h
+branch_and_bound.h
+C:/Users/sabit/CLionProjects/AE_TSP/branch_and_bound.h
 
 C:/Users/sabit/CLionProjects/AE_TSP/read_input.cpp
 read_input.h
