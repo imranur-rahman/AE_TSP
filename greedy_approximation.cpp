@@ -19,12 +19,17 @@ int dfs(int u, int n, const vector<vector<bool>> &isInMST) {
 }
 
 int greedy_approximation(int n, vector<vector<int> > &graph) {
-    Kruskal kruskal(n);
-    kruskal.findMST(graph);
+    Kruskal *kruskal = new Kruskal(n);
+    kruskal->findMST(graph);
+
+    visited.clear();
+    preorder_walk.clear();
 
     visited.resize(n);
     int startnode = rand() % n;
-    dfs(startnode, n, kruskal.getThisInMST());
+    dfs(startnode, n, kruskal->getThisInMST());
+
+    cout << "greedy approximation : ";
 
     //print hamiltonian cycle
     //cout << "preorder walk size : " << preorder_walk.size() << endl;

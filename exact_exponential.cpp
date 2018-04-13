@@ -33,7 +33,8 @@ int exact_exponential(int n, vector<vector<int> > &graph){
         }
     } while ( next_permutation(now_configuration, now_configuration + n) );
 
-    cout << best_cost << endl;
+    cout << "exact exponential : ";
     for(int i = 0; i < n; ++i)
         cout << best_tour[i] << " ";
+    cout << endl << best_cost << endl;
 }

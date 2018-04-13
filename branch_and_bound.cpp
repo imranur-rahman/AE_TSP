@@ -69,9 +69,9 @@ int lowerbound(int n, vector<int> &now_problem, vector<vector<int>> &graph) {
     int start = now_problem[1];
     int end = now_problem.back();
 
-    Kruskal kruskal(n);
-    kruskal.setValidEdge(n, VS);
-    int mst = kruskal.findMST(graph);
+    Kruskal *kruskal = new Kruskal(n);
+    kruskal->setValidEdge(n, VS);
+    int mst = kruskal->findMST(graph);
     //cout << "mst : " << mst << endl;
 
     int ret1 = calculate_lightest_edge(start, VS, n, graph);
@@ -134,6 +134,7 @@ int branch_and_bound(int n, vector<vector<int>> &graph) {
         }
     }
     //cout << "bestSet size : " << bestSet.size() << endl;
+    cout << "branch and bound : ";
     for(int i = 1; i < bestSet.size(); ++i)
         cout << bestSet[i] << " ";
     cout << endl << bestSoFar + 1<< endl;
