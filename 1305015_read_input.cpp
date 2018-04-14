@@ -1,7 +1,7 @@
 //
 // Created by sabit on 4/9/2018.
 //
-#include "read_input.h"
+#include "1305015_read_input.h"
 
 vector<string> split(const string &s, char delim) {
     stringstream ss(s);
@@ -39,10 +39,15 @@ void array_init(int **graph, int n) {
     }
 }
 
-int read_input(string filename, vector<vector<int> > &graph) {
+float calculateDistance(float xi, float yi, float xj, float yj) {
+    return sqrt((xi-xj)*(xi-xj) + (yi-yj)*(yi-yj));
+}
+
+int read_input(string filename, vector<vector<float> > &graph) {
     ifstream myfile (filename);
     string line;
-    int n, m, x, y, weight;
+    int n, m, weight;
+    float x, y;
     if (myfile){
         myfile >> n >> m;
         graph.clear();
@@ -50,11 +55,26 @@ int read_input(string filename, vector<vector<int> > &graph) {
         for(int i = 0; i < n; ++i)
             graph[i].resize(n);
         //cout << n << " " << m << endl;
-        while(myfile >> x >> y >> weight){
+        /*while(myfile >> x >> y >> weight){
             //cout << x << " " << y << " " << weight << endl;
             //graph[x].push_back(make_pair(y, weight));
             graph[x][y] = weight;
+        }*/
+        float xid[n], yid[n];
+        int node = 0;
+        while(myfile >> x >> y) {
+            xid[node] = x;
+            yid[node] = y;
+            node++;
         }
+        for(int i = 0; i < n; ++i) {
+            for(int j = i + 1; j < n; ++j) {
+                float dist = calculateDistance(xid[i], yid[i], xid[j], yid[j]);
+                graph[i][j] = graph[j][i] = dist;
+            }
+        }
+        for(int i = 0; i < n; ++i)
+            graph[i][i] = numeric_limits<float>::max();
         //print_vector(graph);
         myfile.close();
     }

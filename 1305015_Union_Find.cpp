@@ -2,7 +2,7 @@
 // Created by sabit on 4/11/2018.
 //
 
-#include "Union_Find.h"
+#include "1305015_Union_Find.h"
 
 Union_Find::Union_Find(int n){
     parent.resize(n);

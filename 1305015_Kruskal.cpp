@@ -2,8 +2,8 @@
 // Created by sabit on 4/12/2018.
 //
 
-#include "Kruskal.h"
-#include "Union_Find.h"
+#include "1305015_Kruskal.h"
+#include "1305015_Union_Find.h"
 
 using namespace std;
 
@@ -41,7 +41,7 @@ void Kruskal::setValidEdge(int n, vector<int>&validNodes) {
     }
 }
 
-vector<Edge*> Kruskal::create_edges(vector<vector<int> > &graph){
+vector<Edge*> Kruskal::create_edges(vector<vector<float> > &graph){
     vector<Edge*>ret;
     int n = graph.size();
     for(int i = 0; i < n; ++i) {
@@ -53,7 +53,7 @@ vector<Edge*> Kruskal::create_edges(vector<vector<int> > &graph){
     return ret;
 }
 
-int Kruskal::findMST(vector<vector<int> > &graph) {
+int Kruskal::findMST(vector<vector<float> > &graph) {
     vector<Edge*>edges = create_edges(graph);
     sort(edges.begin(), edges.end());
     //cout << "edges vector size : " << edges.size() << endl;

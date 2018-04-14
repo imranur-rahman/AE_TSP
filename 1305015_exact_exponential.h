@@ -14,6 +14,6 @@
 
 using namespace std;
 
-int exact_exponential(int n, vector<vector<int> > &graph);
+float exact_exponential(int n, vector<vector<float> > &graph);
 
 #endif //AE_TSP_EXACT_EXPONENTIAL_H

@@ -80,49 +80,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/Kruskal.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_Kruskal.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/Kruskal.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_Kruskal.h">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/Union_Find.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_Union_Find.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/Union_Find.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_Union_Find.h">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/branch_and_bound.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_branch_and_bound.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/branch_and_bound.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_branch_and_bound.h">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/exact_exponential.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_exact_exponential.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/exact_exponential.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_exact_exponential.h">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/greedy_approximation.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_greedy_approximation.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/greedy_approximation.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_greedy_approximation.h">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/input_generator.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_input_generator.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/input_generator.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_input_generator.h">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/main.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_main.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/read_input.cpp">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_read_input.cpp">
 			<Option target="AE_TSP"/>
 		</Unit>
-		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/read_input.h">
+		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/1305015_read_input.h">
 			<Option target="AE_TSP"/>
 		</Unit>
 		<Unit filename="C:/Users/sabit/CLionProjects/AE_TSP/CMakeLists.txt">

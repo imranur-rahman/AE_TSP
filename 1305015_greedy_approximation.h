@@ -7,9 +7,10 @@
 
 #include <vector>
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
-int greedy_approximation(int n, vector<vector<int> > &graph);
+float greedy_approximation(int n, vector<vector<float> > &graph);
 
 #endif //AE_TSP_GREEDY_APPROXIMATION_H

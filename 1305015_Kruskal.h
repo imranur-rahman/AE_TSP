@@ -31,10 +31,10 @@ private:
     vector<vector<bool>>isThisValidEdge;
 public:
     Kruskal(int n);
-    int findMST(vector<vector<int> > &graph);
+    int findMST(vector<vector<float> > &graph);
     const vector<vector<bool>> &getThisInMST() const;
     void setValidEdge(int n, vector<int>&validNodes);
-    vector<Edge*> create_edges(vector<vector<int> > &graph);
+    vector<Edge*> create_edges(vector<vector<float> > &graph);
 };
 
 

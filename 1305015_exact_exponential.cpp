@@ -1,7 +1,7 @@
-#include "exact_exponential.h"
+#include "1305015_exact_exponential.h"
 
-int calculate_cost_of_this_permutation(int n, int now_configuration[], vector<vector<int> > &graph) {
-    int total = 0;
+float calculate_cost_of_this_permutation(int n, int now_configuration[], vector<vector<float> > &graph) {
+    float total = 0.0;
     for(int i = 1; i < n; ++i) {
         int x = now_configuration[i - 1];
         int y = now_configuration[i];
@@ -16,16 +16,16 @@ int calculate_cost_of_this_permutation(int n, int now_configuration[], vector<ve
     return total + graph[end][start];
 }
 
-int exact_exponential(int n, vector<vector<int> > &graph){
+float exact_exponential(int n, vector<vector<float> > &graph){
     int now_configuration[n];
     for(int i = 0; i < n; ++i)
         now_configuration[i] = i;
 
     int best_tour[n];
-    int best_cost = numeric_limits<int>::max();
+    float best_cost = numeric_limits<float>::max();
 
     do{
-        int now_cost = calculate_cost_of_this_permutation(n, now_configuration, graph);
+        float now_cost = calculate_cost_of_this_permutation(n, now_configuration, graph);
         if(now_cost < best_cost) {
             best_cost = now_cost;
             copy(now_configuration, now_configuration + n, best_tour);
@@ -37,4 +37,5 @@ int exact_exponential(int n, vector<vector<int> > &graph){
     for(int i = 0; i < n; ++i)
         cout << best_tour[i] << " ";
     cout << endl << best_cost << endl;
+    return best_cost;
 }

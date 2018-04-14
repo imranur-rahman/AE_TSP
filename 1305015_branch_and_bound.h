@@ -10,10 +10,10 @@
 #include <queue>
 #include <set>
 
-#include "Kruskal.h"
+#include "1305015_Kruskal.h"
 
 using namespace std;
 
-int branch_and_bound(int n, vector<vector<int>> &graph);
+float branch_and_bound(int n, vector<vector<float>> &graph);
 
 #endif //AE_TSP_BRANCH_AND_BOUND_H

@@ -3,4 +3,4 @@ project(AE_TSP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(AE_TSP main.cpp exact_exponential.cpp branch_and_bound.cpp input_generator.cpp input_generator.h read_input.h read_input.cpp exact_exponential.h branch_and_bound.h greedy_approximation.h greedy_approximation.cpp Union_Find.cpp Union_Find.h Kruskal.cpp Kruskal.h)
+add_executable(AE_TSP 1305015_main.cpp 1305015_exact_exponential.cpp 1305015_branch_and_bound.cpp 1305015_input_generator.cpp 1305015_input_generator.h 1305015_read_input.h 1305015_read_input.cpp 1305015_exact_exponential.h 1305015_branch_and_bound.h 1305015_greedy_approximation.h 1305015_greedy_approximation.cpp 1305015_Union_Find.cpp 1305015_Union_Find.h 1305015_Kruskal.cpp 1305015_Kruskal.h)

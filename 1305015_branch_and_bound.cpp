@@ -1,9 +1,59 @@
 //
 // Created by sabit on 4/8/2018.
 //
-#include "branch_and_bound.h"
+#include <fstream>
+#include "1305015_branch_and_bound.h"
+
 
 int startnode = 0;
+string tofile = "1305015_graph.txt";
+
+void createInputForGraph(string from, string to, vector<int>&configuration) {
+    ifstream in;
+    in.open(from);
+    if(in.is_open() == false) {
+        cout << "could not open file\n";
+        return;
+    }
+    int n = configuration.size();
+    int x, y;
+    float xid[n], yid[n];
+    int node = 0;
+    while(in >> x >> y) {
+        xid[node] = x;
+        yid[node] = y;
+        node++;
+    }
+    in.close();
+
+    ofstream out;
+    out.open(to);
+    if(out.is_open() == false) {
+        cout << "could not open file\n";
+        return;
+    }
+    for(int i = 0; i < n; ++i) {
+        int node = configuration[i];
+        out << xid[node] << " " << yid[node] << endl;
+    }
+    out << xid[configuration[0]] << " " << yid[configuration[0]] << endl;
+    out.close();
+}
+
+float calculateCost(vector<int>&now_configuration, vector<vector<float>> &graph) {
+    float total = 0.0;
+    for(int i = 1; i < now_configuration.size(); ++i) {
+        int x = now_configuration[i - 1];
+        int y = now_configuration[i];
+
+        total += graph[x][y];
+    }
+    //total cycle cost
+    int start = now_configuration[0];
+    int end = now_configuration.back();
+
+    return total + graph[end][start];
+}
 
 void print_vector(vector<int>&v) {
     for(int i = 0; i < v.size(); ++i)
@@ -12,12 +62,12 @@ void print_vector(vector<int>&v) {
 }
 
 bool isCompleteSolution(int n, vector<int>&now_problem) {
-    return (now_problem.size() - 1) == n; //cost tuke baad diye
+    return now_problem.size() == n; //cost tuke baad diye
 }
 
 vector<int> calculate_VS(int n, vector<int>&now_problem) {
     set<int>set(now_problem.begin(), now_problem.end());
-    set.erase(set.find(now_problem[0])); //cost ta delete kore dicchi
+    //set.erase(set.find(now_problem[0])); //cost ta delete kore dicchi
 
     vector<int>ret;
     for(int i = 0; i < n; ++i) {
@@ -37,8 +87,8 @@ vector<int> calculate_VS(int n, vector<int>&now_problem) {
     return ret;
 }
 
-int calculate_lightest_edge(int u, vector<int> &VS, int n, vector<vector<int>> &graph) {
-    int ret = numeric_limits<int>::max();
+float calculate_lightest_edge(int u, vector<int> &VS, int n, vector<vector<float>> &graph) {
+    float ret = numeric_limits<float>::max();
     for(int i = 0; i < VS.size(); ++i) {
         int v = VS[i];
         ret = min(ret, graph[u][v]);
@@ -46,12 +96,12 @@ int calculate_lightest_edge(int u, vector<int> &VS, int n, vector<vector<int>> &
     return ret;
 }
 
-int calculate_second_lighest_edge(int u, vector<int> &VS, int n, vector<vector<int>> &graph) {
-    int min1 = numeric_limits<int>::max();
-    int min2 = min1;
+float calculate_second_lighest_edge(int u, vector<int> &VS, int n, vector<vector<float>> &graph) {
+    float min1 = numeric_limits<int>::max();
+    float min2 = min1;
     for(int i = 0; i < VS.size(); ++i) {
         int v = VS[i];
-        int cost = graph[u][v];
+        float cost = graph[u][v];
         if(cost < min1) {
             min2 = min1;
             min1 = cost;
@@ -63,7 +113,7 @@ int calculate_second_lighest_edge(int u, vector<int> &VS, int n, vector<vector<i
     return min2;
 }
 
-int lowerbound(int n, vector<int> &now_problem, vector<vector<int>> &graph) {
+float lowerbound(int n, vector<int> &now_problem, vector<vector<float>> &graph) {
     vector<int>VS = calculate_VS(n, now_problem);
     //node kokhonoi 1 ta thaka obosthay ekhane asbe na
     int start = now_problem[1];
@@ -71,26 +121,26 @@ int lowerbound(int n, vector<int> &now_problem, vector<vector<int>> &graph) {
 
     Kruskal *kruskal = new Kruskal(n);
     kruskal->setValidEdge(n, VS);
-    int mst = kruskal->findMST(graph);
+    float mst = kruskal->findMST(graph);
     //cout << "mst : " << mst << endl;
 
-    int ret1 = calculate_lightest_edge(start, VS, n, graph);
-    int ret2 = calculate_lightest_edge(end, VS, n, graph);
+    float ret1 = calculate_lightest_edge(start, VS, n, graph);
+    float ret2 = calculate_lightest_edge(end, VS, n, graph);
     //cout << ret1 << " " << ret2 << endl;
 
     return ret1 + ret2 + mst;
 }
 
-int branch_and_bound(int n, vector<vector<int>> &graph) {
+float branch_and_bound(int n, vector<vector<float>> &graph) {
 
     queue<vector<int>>S;
     vector<int>v;
     //v[0] te costSoFar thakteche
-    v.push_back(-1);
+    //v.push_back(-1);
     v.push_back(startnode);
     S.push(v);
 
-    int bestSoFar = numeric_limits<int>::max();
+    float bestSoFar = numeric_limits<float>::max();
     vector<int>bestSet;
 
     while(S.empty() == false) {
@@ -112,12 +162,15 @@ int branch_and_bound(int n, vector<vector<int>> &graph) {
             int newNodeToAdd = VS[i];
 
             now_problem.push_back(newNodeToAdd);
-            now_problem[0] += graph[lastNodeSoFar][newNodeToAdd];
+            //now_problem[0] += graph[lastNodeSoFar][newNodeToAdd];
 
             //print_vector(now_problem);
 
             if(isCompleteSolution(n, now_problem)) {
-                int totalTourCost = now_problem[0] + graph[newNodeToAdd][now_problem[1]];
+                //int totalTourCost = now_problem[0] + graph[newNodeToAdd][now_problem[1]];
+
+                float totalTourCost = calculateCost(now_problem, graph);
+
                 if(totalTourCost < bestSoFar){
                     bestSoFar = totalTourCost;
                     bestSet = now_problem;
@@ -129,14 +182,14 @@ int branch_and_bound(int n, vector<vector<int>> &graph) {
                 S.push(now_problem);
             }
 
-            now_problem[0] -= graph[lastNodeSoFar][newNodeToAdd];
+            //now_problem[0] -= graph[lastNodeSoFar][newNodeToAdd];
             now_problem.pop_back();
         }
     }
     //cout << "bestSet size : " << bestSet.size() << endl;
     cout << "branch and bound : ";
-    for(int i = 1; i < bestSet.size(); ++i)
+    for(int i = 0; i < bestSet.size(); ++i)
         cout << bestSet[i] << " ";
-    cout << endl << bestSoFar + 1<< endl;
-    return bestSoFar + 1;
+    cout << endl << bestSoFar<< endl;
+    return bestSoFar;
 }
