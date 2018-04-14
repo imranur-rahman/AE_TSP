@@ -4,15 +4,16 @@
 #include <iostream>
 #include "1305015_greedy_approximation.h"
 #include "1305015_Kruskal.h"
+#include "1305015_read_input.h"
 
 
 vector<bool>visited;
 vector<int>preorder_walk;
 
 void createInputForGraph(string from, string to, vector<int>configuration) {
-    ifstream in;
-    in.open(from);
-    if(in.is_open() == false) {
+    //ifstream in;
+    //in.open(from);
+    /*if(in.is_open() == false) {
         cout << "could not open file\n";
         return;
     }
@@ -26,7 +27,21 @@ void createInputForGraph(string from, string to, vector<int>configuration) {
         yid[node] = y;
         node++;
     }
-    in.close();
+    in.close();*/
+    /*int n, m, x, y;
+    vector<float>xid, yid;
+    if(in) {
+        in >> n >> m;
+        xid.resize(n);
+        yid.resize(n);
+        int node = 0;
+        while(in >> x >> y) {
+            xid[node] = x;
+            yid[node] = y;
+            node++;
+        }
+        in.close();
+    }*/
 
     ofstream out;
     out.open(to);
@@ -35,7 +50,7 @@ void createInputForGraph(string from, string to, vector<int>configuration) {
         return;
     }
     configuration.push_back(configuration.front());
-    for(int i = 0; i < n; ++i) {
+    for(int i = 0; i < configuration.size(); ++i) {
         int node = configuration[i];
         //cout << node << endl;
         out << xid[node] << " " << yid[node] << endl;
@@ -84,6 +99,6 @@ float greedy_approximation(int n, vector<vector<float> > &graph) {
 
     cost_of_this_hamiltonian_cycle += graph[ preorder_walk.back() ][startnode];
     cout << cost_of_this_hamiltonian_cycle << endl;
-    createInputForGraph("1305015_input.txt", "1305015_graph.txt", preorder_walk);
+    createInputForGraph("1305015_input.txt", "1305015_graph.plt", preorder_walk);
     return cost_of_this_hamiltonian_cycle;
 }

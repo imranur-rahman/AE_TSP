@@ -11,7 +11,7 @@ using namespace std;
 
 vector<vector<float> >graph;
 string filename = "1305015_input.txt";
-int maxNodes = 3;
+int maxNodes = 10;
 
 int main(int argc, char * argv[]) {
     /*int nodes = 8;

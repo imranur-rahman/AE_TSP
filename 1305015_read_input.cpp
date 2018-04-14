@@ -3,6 +3,8 @@
 //
 #include "1305015_read_input.h"
 
+vector<float>xid, yid;
+
 vector<string> split(const string &s, char delim) {
     stringstream ss(s);
     string item;
@@ -60,7 +62,11 @@ int read_input(string filename, vector<vector<float> > &graph) {
             //graph[x].push_back(make_pair(y, weight));
             graph[x][y] = weight;
         }*/
-        float xid[n], yid[n];
+        //float xid[n], yid[n];
+        xid.clear();
+        yid.clear();
+        xid.resize(n);
+        yid.resize(n);
         int node = 0;
         while(myfile >> x >> y) {
             xid[node] = x;

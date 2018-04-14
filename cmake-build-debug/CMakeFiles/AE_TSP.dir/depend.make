@@ -18,6 +18,7 @@ CMakeFiles/AE_TSP.dir/1305015_exact_exponential.cpp.obj: ../1305015_exact_expone
 CMakeFiles/AE_TSP.dir/1305015_greedy_approximation.cpp.obj: ../1305015_Kruskal.h
 CMakeFiles/AE_TSP.dir/1305015_greedy_approximation.cpp.obj: ../1305015_greedy_approximation.cpp
 CMakeFiles/AE_TSP.dir/1305015_greedy_approximation.cpp.obj: ../1305015_greedy_approximation.h
+CMakeFiles/AE_TSP.dir/1305015_greedy_approximation.cpp.obj: ../1305015_read_input.h
 
 CMakeFiles/AE_TSP.dir/1305015_input_generator.cpp.obj: ../1305015_input_generator.cpp
 CMakeFiles/AE_TSP.dir/1305015_input_generator.cpp.obj: ../1305015_input_generator.h

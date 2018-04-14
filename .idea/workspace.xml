@@ -12,45 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82bcf73c-206f-4e07-a626-59a41bff337c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kruskal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_Kruskal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kruskal.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_Kruskal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Union_Find.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_Union_Find.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Union_Find.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_Union_Find.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/branch_and_bound.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_branch_and_bound.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/branch_and_bound.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_branch_and_bound.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AE_TSP.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AE_TSP.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AE_TSP.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AE_TSP.layout" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AE_TSP.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/Kruskal.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/Union_Find.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/branch_and_bound.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/exact_exponential.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/greedy_approximation.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/input_generator.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AE_TSP.dir/read_input.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/output.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exact_exponential.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_exact_exponential.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exact_exponential.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_exact_exponential.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy_approximation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_greedy_approximation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy_approximation.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_greedy_approximation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_generator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_input_generator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_generator.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_input_generator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_read_input.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_input.h" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_read_input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1305015_greedy_approximation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1305015_greedy_approximation.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,10 +25,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1305015_read_input.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1305015_read_input.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1305015_read_input.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="460">
               <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
             </state>
           </provider>
@@ -117,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1305015_greedy_approximation.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="1305015_greedy_approximation.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1305015_greedy_approximation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            <state relative-caret-position="235">
+              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="e#40#59#0" expanded="true" />
               </folding>
@@ -285,18 +247,17 @@
       <workItem from="1523621198315" duration="983000" />
       <workItem from="1523639628618" duration="367000" />
       <workItem from="1523640312299" duration="552000" />
-      <workItem from="1523677023021" duration="3032000" />
+      <workItem from="1523677023021" duration="3242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51834000" />
+    <option name="totallyTimeSpent" value="52044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17789166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17789166" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32713178" />
       <window_info anchor="bottom" id="CMake" order="11" />
@@ -525,20 +486,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1305015_greedy_approximation.cpp">
+    <entry file="file://$PROJECT_DIR$/1305015_read_input.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="e#40#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="460">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1305015_read_input.cpp">
+    <entry file="file://$PROJECT_DIR$/1305015_greedy_approximation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="235">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="e#40#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

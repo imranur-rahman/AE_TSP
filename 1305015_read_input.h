@@ -16,6 +16,9 @@
 
 using namespace std;
 
+
+extern vector<float>xid, yid;
+
 vector<string> split(const string &s, char delim);
 void print_vector(vector<vector<float> > &graph);
 int read_input(string filename, vector<vector<float> > &graph);
